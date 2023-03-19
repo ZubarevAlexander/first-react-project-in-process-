@@ -1,0 +1,21 @@
+.header-ad {
+	display: flex;
+	min-height: 50px;
+	background-color: #D4E9F9;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.header-ad__icon {
+	margin-right: 10px;
+}
+
+.header-ad__text {
+	color: var(--black);
+	font-size: 18px;
+	line-height: 122%;
+	text-align: center;
+	letter-spacing: 0.02em;
+
+}
