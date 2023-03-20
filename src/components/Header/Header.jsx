@@ -1,23 +1,12 @@
-import HeaderAd from "./HeaderAd";
+import Slider from "./../Slider";
 import { ads } from "./../../helpers/HeaderAdList";
-
 
 const Header = () => {
 	return (
 		<header className="header">
-			<div className="container">
-				<div className="header-top">
-					{ads.map((ad, index) => {
-						return (
-							<HeaderAd
-								key={index}
-								icon={ad.icon}
-								text={ad.text}
-								index={index}
-							/>
-						);
-
-					})}
+			<div className="promo">
+				<div className="container">
+					<Slider slides={ads}></Slider>
 				</div>
 			</div>
 		</header>

@@ -1,9 +1,7 @@
-import "./HeaderAd.css";
+import "./Promo.css";
 
-//import { ads } from "./../../helpers/HeaderAdList";
+const Promo = ({icon, text}) => {
 
-
-const HeaderAd = ({icon, text}) => {
 	return (
 		<div className="header-ad">
 			<img src={icon} alt="" className="header-ad__icon"></img>
@@ -14,4 +12,4 @@ const HeaderAd = ({icon, text}) => {
 	);
 }
 
-export default HeaderAd;
+export default Promo;
