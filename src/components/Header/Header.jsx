@@ -1,14 +1,12 @@
-import Slider from "./../Slider";
+import SliderPromo from "../SliderPromo";
 import { ads } from "./../../helpers/HeaderAdList";
+import HeaderTop from "./HeaderTop/HeaderTop";
 
 const Header = () => {
 	return (
 		<header className="header">
-			<div className="promo">
-				<div className="container">
-					<Slider slides={ads}></Slider>
-				</div>
-			</div>
+			<SliderPromo slides={ads}></SliderPromo>
+			<HeaderTop></HeaderTop>
 		</header>
 	);
 }
