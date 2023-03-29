@@ -4,11 +4,12 @@ import { Autoplay } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
-import "./Header/promo/Promo.css";
+import "./Header/promo/Promo.scss";
 
 const Slider = ({ slides }) => {
 	return (
 		<div className='promo'>
+			<div className='promo__container container'>
 			<Swiper
 				modules={[Autoplay]}
 				spaceBetween={0}
@@ -34,6 +35,7 @@ const Slider = ({ slides }) => {
 
 
 			</Swiper>
+		</div>
 		</div>
 	);
 };

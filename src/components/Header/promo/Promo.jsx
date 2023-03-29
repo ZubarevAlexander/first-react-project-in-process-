@@ -1,6 +1,6 @@
-import "./Promo.css";
+import "./Promo.scss";
 
-const Promo = ({icon, text}) => {
+const Promo = ({ icon, text }) => {
 
 	return (
 		<div className="header-ad">
