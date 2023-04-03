@@ -1,15 +1,23 @@
 .header-bottom {
 	min-height: 160px;
 	padding: 19px 0px 19px 0px;
+	@media(max-width:991.98px) {
+		display: none;
+	}
+	
+	
 	&__container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		
+		
 	}
 
 	&__logo {
 		background-color: #B3D9F3;
 		border-radius: 50%;
+		
 	}
 	
 	a {
@@ -21,10 +29,14 @@
 }
 
 .left-menu {
+	
+	
 	&__list{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		
+		
 	}
 	&__item{
 		display: flex;
@@ -64,6 +76,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		
 	}
 	&__item{
 		margin-left: 25px;
