@@ -18,8 +18,11 @@ const HeaderTop = ({ active, setActive }) => {
 					<span></span>
 					<span></span>
 				</div>
+				<div className="header-top__logo">
+					<img src={logo} alt=""></img> 
+				</div>
 				<div className="header-top__menu menu">
-					<div className={active ? "menu__body _active" : "menu__body"} onClick={(e) => e.stopPropagation()}>
+					<div className="menu__body">
 						<ul className="menu__list">
 							<li className="menu__item"><a href="#" className="menu__link">Гарантия свежести</a></li>
 							<li className="menu__item"><a href="#" className="menu__link">Доставка и оплата</a></li>
@@ -28,7 +31,7 @@ const HeaderTop = ({ active, setActive }) => {
 						</ul>
 					</div>
 				</div>
-				{/* <img src={logo} alt="" className="header-top__logo-mobile"></img> */}
+
 				<div className="header-top__actions actions">
 					<div className="actions__phone">
 						<img src={iconMobile} alt="" />

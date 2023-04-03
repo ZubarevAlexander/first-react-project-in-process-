@@ -2,14 +2,21 @@
 	position: relative;
 	background-color: #F7EBE5;
 	min-height: 48px;
-	@media (max-width: 991.98px) {
+	@media(max-width:991.98px) {
 		
 	}
 
-	&__logo-mobile {
+	&__logo {
 		display: none;
 		@media (max-width: 991.98px) {
-			
+			display: block;
+			width: 70px;
+			height: 60px;
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 }
@@ -28,19 +35,20 @@
 }
 
 
+
 /*Burger*/
 .header-top__burger {
 	display: none;
 	@media (max-width: 991.98px) {
 		display: block;
-		position: absolute; // поменяли на relative/absolute;
+		position: relative; // поменяли на relative/absolute;
 		top: 50%; // с 18 на 0
 		left: 18px; // с 10 на 0
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
 		z-index: 5;
-		transform: translateY(-50%);
+		// transform: translateY(-50%);
 		span {
 			transition: all 0.3s ease 0s;
 			top: calc(50% - 1px);
@@ -79,8 +87,8 @@
 
 /*Main menu*/
 .menu {
+	
 	&__body {
-
 		@media (max-width: 991.98px) {	
 			position: fixed;
 			// background-color: #F7EBE5;
@@ -88,7 +96,7 @@
 			height: 100%;
 			left: 0;
 			top: 0;
-			padding: 110px 0px 20px 0px;
+			padding: 50px 0px 20px 0px;
 			overflow: auto;
 			opacity: 0;
 			visibility: hidden;
@@ -141,8 +149,6 @@
 	
 }
 
-
-
 /* Menu actions (socials, basket)*/
 .header-top__actions {
 
@@ -155,14 +161,18 @@
 	max-width: 476px;
 	margin-left: 20px;
 	@media (max-width: 991.98px) {
-		display: none;
+
 	}
+	
 }
 
 .actions__phone {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media (max-width: 991.98px) {
+		display: none;
+	}
 	
 }
 .actions__phone img {
@@ -173,6 +183,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media (max-width: 991.98px) {
+		span {
+			display: none;
+		}
+	}
 }
 .actions__basket img {
 	margin-right: 5px;
@@ -180,6 +195,7 @@
 
 
 .basket  {
+	
 	position: relative;
 	span {
 		position: absolute;
@@ -194,6 +210,7 @@
 		color: #fff;
 		background-color: #000;
 		font-size: 10px;
+		
 	}
 	
 }
@@ -204,7 +221,9 @@
 .socials {
 	display: flex;
 	align-items: center;
-	
+	@media (max-width: 991.98px) {
+		display: none;
+	}
 }
 
 
