@@ -1,6 +1,6 @@
 import { useState } from "react";
-import SliderPromo from "../SliderPromo";
-import { ads } from "./../../helpers/HeaderAdList";
+import SliderPromo from "../Header/promo/SliderPromo";
+import { ads } from "./../../helpers/Promo/HeaderAdList";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 import HeaderTop from "./HeaderTop/HeaderTop";
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
