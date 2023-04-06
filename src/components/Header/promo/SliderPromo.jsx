@@ -4,7 +4,7 @@ import { Autoplay } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
-import "./Header/promo/Promo.scss";
+import "./Promo.scss";
 
 const Slider = ({ slides }) => {
 	return (
