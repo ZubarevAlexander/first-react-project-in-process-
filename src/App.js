@@ -6,6 +6,8 @@ import React from 'react';
 import Header from "./components/Header/Header";
 import Feature from "./components/Feature/Feature";
 import { features } from "./helpers/Feature/FeaturesList";
+import { promotions } from "./helpers/Promotion/PromotionList";
+import Promotion from "./components/Promotion/Promotion";
 
 
 function App() {
@@ -31,12 +33,15 @@ function App() {
           <div className="features__container container">
             <div className="features__row">
               {features.map((feature, index) => {
-                return(
-                  <Feature key={index} icon={feature.icon} title={feature.title} text={feature.text} />
-                )     
+                return (
+                  <Feature key={index} icon={feature.icon} title={feature.title} text={feature.text} bg={feature.bg} />
+                )
               })}
             </div>
           </div>
+        </section>
+        <section>
+          <Promotion promotions={promotions}></Promotion>
         </section>
       </main>
     </div>

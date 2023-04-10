@@ -1,0 +1,63 @@
+.promotions__item {
+	// background-image: url("./../../helpers/Promotion/new1.jpg");
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	 //height: 100%;
+	// min-height: 400px;
+	// display: flex;
+	// justify-content: center;
+	// align-items: flex-end;
+	// text-align: center;
+	// border-radius: 5px;
+	// border: 1px solid sienna;
+	
+
+}
+
+.promotions__image {
+	position: relative;
+	
+	img {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}
+
+.promotions__content {
+	position: absolute;
+	top: 65%;
+	left: 0;
+	width: 100%;
+	
+	
+	padding: 30px 15px;
+	text-align: center;
+	
+	
+}
+.promotions__text {
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 122%;
+	color: #000;
+}
+.promotions__title {
+	margin-bottom: 3px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 122%;
+	color: #FFFFFF;
+}
+
+.swiper-wrapper {
+
+}
+
+.swiper-slide {
+	
+
+}
+
