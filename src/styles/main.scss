@@ -78,6 +78,7 @@ body {
 .page {
 	flex: 1 1 auto;
 	height: 100%;
+	background: #F7F7F7;
 }
 
 //========================================
@@ -180,7 +181,7 @@ body {
 //==========================================
 
 .features {
-	
+	margin-bottom: 94px;
 	&__row {
 		display: flex;
 		flex-wrap: wrap;

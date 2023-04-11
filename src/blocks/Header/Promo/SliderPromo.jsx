@@ -11,7 +11,7 @@ const Slider = ({ slides }) => {
 		<div className='promo'>
 			<div className='promo__container container'>
 				<Swiper
-					modules={[Autoplay]}
+					// modules={[Autoplay]}
 					spaceBetween={0}
 					slidesPerView={1}
 					onSlideChange={() => console.log('slide change')}
@@ -20,7 +20,7 @@ const Slider = ({ slides }) => {
 						delay: 2000,
 						disableOnInteraction: false,
 					}}
-					loop={true}
+					loop={false}
 					speed={1350}
 
 				>

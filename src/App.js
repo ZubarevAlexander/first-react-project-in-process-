@@ -3,11 +3,11 @@ import mainbanner from "./img/mainbanner.png";
 
 import React from 'react';
 
-import Header from "./components/Header/Header";
-import Feature from "./components/Feature/Feature";
+import Header from "./blocks/Header/Header";
+import Feature from "./blocks/Feature/Feature";
 import { features } from "./helpers/Feature/FeaturesList";
 import { promotions } from "./helpers/Promotion/PromotionList";
-import Promotion from "./components/Promotion/Promotion";
+import Promotion from "./blocks/Promotion/Promotion";
 
 
 function App() {
@@ -40,8 +40,11 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section>  
           <Promotion promotions={promotions}></Promotion>
+        </section>
+        <section>
+
         </section>
       </main>
     </div>
