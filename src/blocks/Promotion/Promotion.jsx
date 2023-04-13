@@ -5,12 +5,13 @@ import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "./Promotion.scss";
+import TitleH2 from "../../components/TitleH2/TitleH2";
 
 const Promotion = ({ promotions }) => {
 	return (
-		<div className="promotions">
+		<>
 			<div className="promotions__container container">
-				<div className="promotions__title">Акции</div>
+				<TitleH2 title="Акции"/>
 				<Swiper
 					modules={[Pagination]}
 					spaceBetween={20}
@@ -45,7 +46,7 @@ const Promotion = ({ promotions }) => {
 					)}
 				</Swiper>
 			</div>
-		</div>
+		</>
 	);
 }
 
