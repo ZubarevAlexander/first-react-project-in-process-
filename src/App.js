@@ -8,6 +8,10 @@ import Feature from "./blocks/Feature/Feature";
 import { features } from "./helpers/Feature/FeaturesList";
 import { promotions } from "./helpers/Promotion/PromotionList";
 import Promotion from "./blocks/Promotion/Promotion";
+import Holidays from "./blocks/Holidays/Holidays";
+import { holiday } from "./blocks/Holidays/HolidaysList";
+import Products from "./blocks/Products/Products";
+import { products } from "./blocks/Products/ProductList";
 
 
 function App() {
@@ -40,11 +44,14 @@ function App() {
             </div>
           </div>
         </section>
-        <section>  
+        <section className="promotions">
           <Promotion promotions={promotions}></Promotion>
         </section>
-        <section>
-
+        <section className="holidays">
+          <Holidays holidays={holiday} />
+        </section>
+        <section className="products">
+          <Products products={products}/>
         </section>
       </main>
     </div>
