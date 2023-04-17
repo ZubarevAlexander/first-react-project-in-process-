@@ -12,6 +12,7 @@ import Holidays from "./blocks/Holidays/Holidays";
 import { holiday } from "./blocks/Holidays/HolidaysList";
 import Products from "./blocks/Products/Products";
 import { products } from "./blocks/Products/ProductList";
+import Footer from "./blocks/Footer/Footer";
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           <Products products={products}/>
         </section>
       </main>
+      <Footer/>
     </div>
   );
 }
