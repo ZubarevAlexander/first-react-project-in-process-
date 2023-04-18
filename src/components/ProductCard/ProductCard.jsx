@@ -16,7 +16,7 @@ const ProductCard = ({ img, title, desc, price }) => {
 					<span>{price}</span>
 					<div className="products__add">
 						<div className="products__basket">
-							В корзину
+							<span>В корзину</span>
 						</div>
 					</div>
 				</div>

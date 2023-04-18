@@ -1,5 +1,8 @@
 .products {
 	margin: 0px 0px 85px 0px;
+	@media (max-width: 767.98px) {
+		margin: 0px 0px 60px 0px;
+	}
 }
 .products__container {
 	display: flex;
@@ -9,13 +12,15 @@
 .products__row {
 	display: flex;
 	flex-wrap: wrap;
-	
+	justify-content: center;
 	margin: 0 -10px;
+	@media(max-width: 767.98px) {
+		margin: 0 -8px;
+	}
 }
 .products__btn {
 	cursor: pointer;
 	display: inline-block;
-	min-height: 52px;
 	padding: 18px 48px;
 	border: 1px solid #4E9DD3;
 	border-radius: 3px;
@@ -25,5 +30,9 @@
 	line-height: 122%;
 	text-align: center;
 	color: #000000;
-	margin: 0 auto;
+	margin: 24px auto 0 auto;
+	@media(max-width: 767.98px) {
+		padding: 14px 28px;
+		font-size: 12px;
+	}
 }

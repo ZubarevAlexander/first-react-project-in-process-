@@ -5,20 +5,16 @@
 
 	overflow: hidden;
 	
-	
+	position: relative;
 }
 
 .feature__bg {
 	// position: absolute;
-	// width: 100%;
-	// height: 100%;
 	// top: 0;
-	// object-fit: cover;
-	// max-width: 100%;
 }
 
 // .feature__bg_1 {
-// 	// content: url("./bg/bg1.png");
+// 	content: url("./bg/bg1.png");
 // }
 
 // .feature__bg_2 {
@@ -42,6 +38,7 @@
 // }
 
 .feature__content {
+	
 	position: relative;
 	display: flex;
 	flex-direction: column;
