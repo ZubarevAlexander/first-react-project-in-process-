@@ -1,7 +1,7 @@
 import "./styles/main.scss";
 import mainbanner from "./img/mainbanner.png";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Header from "./blocks/Header/Header";
 import Feature from "./blocks/Feature/Feature";
@@ -16,6 +16,7 @@ import Footer from "./blocks/Footer/Footer";
 
 
 function App() {
+  
   return (
     <div className="App">
       <Header></Header>
@@ -52,10 +53,10 @@ function App() {
           <Holidays holidays={holiday} />
         </section>
         <section className="products">
-          <Products products={products}/>
+          <Products products={products} />
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
