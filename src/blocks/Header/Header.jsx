@@ -3,17 +3,15 @@ import SliderPromo from "./Promo/SliderPromo";
 import { ads } from "./../../helpers/Promo/HeaderAdList";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 import HeaderTop from "./HeaderTop/HeaderTop";
-import HeaderMobile from "./HeaderMobile/HeaderMobile";
+
 
 const Header = () => {
-	const [menuActive, setMenuActive] = useState(false);
 
 	return (
-		<header className="header" onClick={() => setMenuActive(!menuActive)}>
+		<header className="header" >
 			<SliderPromo slides={ads}></SliderPromo>
-			<HeaderTop active={menuActive} setActive={setMenuActive}></HeaderTop>
+			<HeaderTop  ></HeaderTop>
 			<HeaderBottom></HeaderBottom>
-			{/* <HeaderMobile ></HeaderMobile> */}
 		</header>
 	);
 }
