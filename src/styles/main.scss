@@ -61,6 +61,17 @@ body {
 	background: #F7F7F7;
 }
 
+
+.header {
+	@media(max-width:991.98px) {
+		position: fixed;
+		z-index: 10000;
+		left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+	}
+}
 //========================================
 
 .main-banner {
@@ -69,10 +80,14 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left 30%;
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	background-color: #F7F7F7;
 	display: flex;
 	align-items: center;
+	@media(max-width: 991.98px) {
+		padding: 124px 0 0 0;
+		flex-direction: column;
+	}
 	
 	&__image {
 		flex: 0 0 50%;
@@ -88,6 +103,9 @@ body {
 
 	&__container {
 		flex: 0 0 50%;
+		@media(max-width: 991.98px) {
+			order: -1;
+		}
 		
 	}
 
@@ -96,7 +114,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		max-width: 500px;
-		
 		
 	}
 
