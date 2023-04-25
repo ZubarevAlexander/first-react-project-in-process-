@@ -15,8 +15,10 @@ const Holidays = ({ holidays }) => {
 										<div className="holidays__image">
 											<img src={holiday.icon}></img>
 										</div>
-										<div className="holidays__day">{holiday.day}</div>
-										<div className="holidays__name">{holiday.name}</div>
+										<div className="holidays__text">
+											<div className="holidays__day">{holiday.day}</div>
+											<div className="holidays__name">{holiday.name}</div>
+										</div>
 									</div>
 								</div>
 							</>

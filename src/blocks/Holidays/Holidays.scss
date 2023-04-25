@@ -1,5 +1,8 @@
 .holidays {
 	margin-bottom: 95px;
+	@media(max-width: 767.98px) {
+		margin-bottom: 33px;
+	}
 	
 	&__row{
 		display: flex;
@@ -14,14 +17,31 @@
 			position: absolute;
 			border: 1px dashed #D2D2D2;
 			top: 28%;
+			@media(max-width: 767.98px) {
+				top: 0%;
+				left: 50px;
+				width: 0;
+				height: 100%;
+				
+			}
+		}
+
+		@media(max-width: 767.98px) {
+			flex-direction: column;
+			
 		}
 	}
 	&__column{
 		padding: 0 15px;
 		&:first-child {
 			img {
-			
 				transform: scale(1.5) translate(15%, -20%);
+			}
+		}
+
+		&:nth-child(3) ~ &{
+			@media(max-width: 767.98px) {
+				display: none;
 			}
 		}
 	}
@@ -32,7 +52,12 @@
 		text-align: center;
 		position: relative;
 		height: 100%;
+		@media(max-width: 767.98px) {
+			flex-direction: row;
+		}
 	}
+
+	
 	&__image{
 		margin: 0 0 5px 0;
 		img {
@@ -40,11 +65,9 @@
 			height: 60px;
 		}
 	}
-	&__day{
-		flex: 1 1 auto;
-	}
-	&__day,
-	&__name{
+
+	&__text {
+		
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 600;
@@ -52,5 +75,13 @@
 		line-height: 17px;
 		text-align: center;
 		color: #292929;
+		@media(max-width: 767.98px) {
+			font-size: 12px;
+			margin-left: 10px;
+		}
 	}
+	&__day{
+		flex: 1 1 auto;
+	}
+	
 }

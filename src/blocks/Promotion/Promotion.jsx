@@ -26,8 +26,17 @@ const Promotion = ({ promotions }) => {
 					speed={1350}
 					pagination={{ clickable: true }}
 					breakpoints={{
+						320: {
+							slidesPerView: 1,
+						},
+						467.98: {
+							slidesPerView: 2,
+						},
+						767.98: {
+							slidesPerView: 3,
+						},
 						991.98: {
-
+							slidesPerView: 4,
 						}
 					}}
 				>

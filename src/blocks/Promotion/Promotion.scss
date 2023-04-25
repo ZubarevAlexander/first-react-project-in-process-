@@ -34,7 +34,7 @@
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 122%;
-	color: #000;
+	color: #FFFFFF;
 }
 .promotions__subtitle {
 	margin-bottom: 3px;
@@ -54,6 +54,9 @@
 .swiper-pagination {
 	position: static;
 	text-align: end;
+	@media(max-width: 767.98px) {
+		text-align: center;
+	}
 }
 
 .swiper-pagination-bullet {
