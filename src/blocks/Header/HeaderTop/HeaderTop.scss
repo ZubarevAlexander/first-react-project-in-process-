@@ -25,12 +25,6 @@
 	align-items: center;
 }
 
-.header-top  a {
-	color: #000000c9;
-	font-size: 14px;
-	line-height: 121%;
-	
-}
 
 /*Burger*/
 .header-top__burger {
@@ -109,6 +103,9 @@
 	&__link {
 		display: inline-block;
 		padding: 15px 14px 15px;
+		font-size: 14px;
+		line-height: 122%;
+		color: rgba(0, 0, 0, 0.79);
 		@media (max-width: 1199.98px) {
 			padding: 10px 14px 10px;
 		}
@@ -124,6 +121,11 @@
 	flex: 1 1 100%;
 	max-width: 476px;
 	margin-left: 20px;
+	a {
+		font-size: 14px;
+		line-height: 122%;
+		color: rgba(0, 0, 0, 0.88);
+	}
 	@media (max-width: 991.98px) {
 		flex: 0;
 	}
@@ -132,6 +134,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		
 		img {
 			margin-right: 5px;
 		}

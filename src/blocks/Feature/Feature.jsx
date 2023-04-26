@@ -5,7 +5,6 @@ const Feature = ({ icon, title, text, bg }) => {
 	return (
 		<div className="feature__item">
 			<div className={"feature__bg " + bg}>
-				{/* <img src={bg1}></img> */}
 			</div>
 			<div className="feature__content">
 				<div className="feature__icon">
