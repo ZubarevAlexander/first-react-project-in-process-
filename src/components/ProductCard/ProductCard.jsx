@@ -1,7 +1,15 @@
+import { useState } from "react";
 import "./ProductCard.scss";
 
 
 const ProductCard = ({ img, title, desc, price }) => {
+
+	const [isAdded, setIsAdded] = useState(false);
+
+	const addToBasket = () => {
+		setIsAdded(!isAdded);
+	}
+
 	return (
 		<div className="products__column">
 			<div className="products__item">
@@ -14,11 +22,11 @@ const ProductCard = ({ img, title, desc, price }) => {
 				</div>
 				<div className="products__price">
 					<span>{price}</span>
-					<div className="products__add">
-						<div className="products__basket">
-							<span>В корзину</span>
+					<button onClick={addToBasket} className={isAdded ? "products__add checked" : "products__add"}>
+						<div className={isAdded ? "products__basket checked" : "products__basket"}>
+							<span className={isAdded ? "checked" : ""}>В корзину</span>
 						</div>
-					</div>
+					</button>
 				</div>
 
 			</div>
