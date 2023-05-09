@@ -1,7 +1,7 @@
 import "./styles/main.scss";
 import mainbanner from "./img/mainbanner.png";
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Header from "./blocks/Header/Header";
 import Feature from "./blocks/Feature/Feature";
@@ -11,11 +11,12 @@ import Promotion from "./blocks/Promotion/Promotion";
 import Holidays from "./blocks/Holidays/Holidays";
 import { holiday } from "./blocks/Holidays/HolidaysList";
 import Products from "./blocks/Products/Products";
-import { products } from "./blocks/Products/ProductList";
+// import { products } from "./blocks/Products/ProductList";
 import Footer from "./blocks/Footer/Footer";
 
 
 function App() {
+  // const [items, setItems] = useState(false);
   
   return (
     <div className="App">
@@ -53,7 +54,7 @@ function App() {
           <Holidays holidays={holiday} />
         </section>
         <section className="products">
-          <Products products={products} />
+          <Products />
         </section>
       </main>
       <Footer />
